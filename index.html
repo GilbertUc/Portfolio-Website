@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
     <link rel="shortcut icon" href="logotop.png" type="image/x-icon">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +21,7 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="neonbtn">Contact Me</a>
+        <a href="#contact" class="neonbtn">Contact Me</a>
     </header>
 
     <!--Main Content-->
@@ -90,33 +89,50 @@
 
         <section class="about" id="about">
              <div class="about-img">
-                <img src="robothero.png" alt="">
+                <img src="profile.jpg" alt="">
             </div>
             <div class="about-content">
-                <h1>
-                    <span class="neon-text">About Me</span>
-                </h1>
-                <p>I'm Gilbert, an aspiring engineer passionate about robotics,technology and innovation. 
-                    I turn curiosity into experiments,
-                    ideas into projects, and challenges into opportunities to learn.
+                <p class="about-eyebrow">About Me</p>
+                <h1>Building practical ideas with <span class="neon-text">curiosity and purpose.</span></h1>
+                <p class="about-lead">
+                    I'm Gilbert, an aspiring engineer focused on robotics, embedded systems,
+                    automation, and software development. I enjoy transforming ideas into
+                    working projects while learning how hardware and software can solve
+                    real-world problems.
                 </p>
+
+                <div class="skills">
+                    <h2>Technical Skills</h2>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Arduino</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>JavaScript</li>
+                        <li>Robotics</li>
+                        <li>Embedded Systems</li>
+                        <li>Sensors &amp; Automation</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
             </div>
            
             
         </section>
 
 
-        <section class="contact">
+        <section class="contact" id="contact">
+            <div class="contact-heading">
+                <p class="neon-text">LET'S TALK</p>
+                <h2>Contact Me</h2>
+            </div>
             <form action="">
-                <caption>Contact Me</caption>
                 <label for="name">Your Name:</label>
-                <input type="text"  name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="eamil">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
                 <label for="message">Message:</label>
-                <textarea cols="5" rows="5" name="message" id="message"></textarea>
-
-                <button>Send</button>
+                <textarea rows="5" name="message" id="message" placeholder="Tell me about your project"></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
