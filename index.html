@@ -16,10 +16,10 @@
         </a>
         <nav>
             <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="projects.html">Projects</a></li>   
-                <li><a href="about.html">About</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>   
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
         <a href="contact.html" class="neonbtn">Contact Me</a>
@@ -27,7 +27,7 @@
 
     <!--Main Content-->
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-content">
                 <h1>BEYOND THE BLUEPRINT
                     <span class="neon-text">INTO THE FUTURE.</span>
@@ -43,26 +43,81 @@
             </div>
             
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="introtext">
                 <p class="neon-text">WHAT I DO</p>
                 <h2>Services</h2>
             </div>
-            <div class="servicecards">
-                <article class="servicecard">
+            <div class="cards">
+                <article class="card">
                     <h3>Robotics & Embedded Systems</h3>
                     <p>Exploring the world of robotics through hands-on design, prototyping and embedded programming. From Arduino-based systems to obstacle-avoiding robots, I enjoy turning electronic components into functional machines.
                     </p>
                 </article>
-                <article class="servicecard">
+                <article class="card">
                     <h3>Intelligent Systems & Automation</h3>
                     <p>Building intelligent systems that use sensors, electronics and automation to solve practical problems. My projects include automated load balancing and AgroShield, a smart agricultural monitoring and irrigation system.</p>
                 </article>
-                <article class="servicecard">
+                <article class="card">
                     <h3>Software Development </h3>
                     <p>Developing my programming skills through Python, Arduino programming and web technologies. I enjoy creating software solutions, exploring how systems work and bringing ideas to life through code.</p>
                 </article>
             </div>
+        </section>
+        <section class="projects" id="projects">
+             <div class="introtext">
+                <p class="neon-text">WHAT I HAVE BUILT</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <h3>Obstacle Avoiding Robot</h3>
+                    <p>A robot tht uses Ultrasonic sensor to avoid obstacles.</p>
+                    <img class="img1" src="robothero.png" alt="Obstacle Avoiding Robot">
+                </article>
+                <article class="card">
+                    <h3>Web-Based Voting System</h3>
+                    <p>A website that allows free and fair voting for students at any level of education.</p>
+                    <img src="voting.png" alt="Web-Based Voting System">
+                </article>
+                <article class="card">
+                    <h3>Snake Game</h3>
+                    <p>A python game of snake where you eat the apple to score points.</p>
+                    <img  src="snake.jpg" alt="Snake Game">
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+             <div class="about-img">
+                <img src="robothero.png" alt="">
+            </div>
+            <div class="about-content">
+                <h1>
+                    <span class="neon-text">About Me</span>
+                </h1>
+                <p>I'm Gilbert, an aspiring engineer passionate about robotics,technology and innovation. 
+                    I turn curiosity into experiments,
+                    ideas into projects, and challenges into opportunities to learn.
+                </p>
+            </div>
+           
+            
+        </section>
+
+
+        <section class="contact">
+            <form action="">
+                <caption>Contact Me</caption>
+                <label for="name">Your Name:</label>
+                <input type="text"  name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="eamil">
+                <label for="message">Message:</label>
+                <textarea cols="5" rows="5" name="message" id="message"></textarea>
+
+                <button>Send</button>
+            </form>
         </section>
     </main>
 
